@@ -82,7 +82,14 @@ export default function Home() {
               <a href={emailComposeUrl} target="_blank" rel="noopener noreferrer"><BrandIcon name="gmail" className="brand-icon-inline brand-icon-gmail" />Email <span aria-hidden="true">↗</span></a>
             </div>
           </div>
-          <div className="hero-visual" aria-label="Neeraj Salve monogram illustration">
+          <div className="hero-visual" aria-label="Portrait of Neeraj Salve">
+            <div className="hero-photo-orbits" aria-hidden="true">
+              <span className="hero-orbit hero-orbit-one" />
+              <span className="hero-orbit hero-orbit-two" />
+              <span className="hero-sparkle hero-sparkle-one">✦</span>
+              <span className="hero-sparkle hero-sparkle-two">✧</span>
+              <span className="hero-sparkle hero-sparkle-three">✦</span>
+            </div>
             <div className="visual-card profile-photo-card">
               <div className="profile-photo-window">
                 <Image
@@ -95,6 +102,16 @@ export default function Home() {
                   priority
                 />
               </div>
+            </div>
+            <div className="hero-status-badge hero-status-open">
+              <span className="hero-badge-icon" aria-hidden="true">↗</span>
+              <span>Open to opportunities</span>
+              <span className="hero-badge-dot" aria-label="Available" />
+            </div>
+            <div className="hero-status-badge hero-status-learning">
+              <span className="hero-badge-icon" aria-hidden="true">✳</span>
+              <span>Currently learning</span>
+              <span className="hero-badge-dot" aria-hidden="true" />
             </div>
           </div>
           <a className="scroll-cue" href="#about"><span className="scroll-line" /> SCROLL TO EXPLORE</a>

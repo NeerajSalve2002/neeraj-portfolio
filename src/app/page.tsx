@@ -140,8 +140,43 @@ export default function Home() {
         </section>
 
         <section id="projects" className="content-section section-wrap">
-          <div className="section-kicker" data-scroll-reveal>03 / SELECTED WORK</div><div className="section-heading-row" data-scroll-reveal><h2>Projects in progress<span className="gradient-text">.</span></h2></div>
-          <p className="projects-empty" data-scroll-reveal>Something new is in the works. Check back soon.</p>
+          <div className="section-kicker" data-scroll-reveal>03 / SELECTED WORK</div>
+          <div className="section-heading-row" data-scroll-reveal><h2>Selected work<span className="gradient-text">.</span></h2></div>
+          <article className="portfolio-project-card" data-scroll-reveal>
+            <div className="project-card-heading">
+              <div>
+                <span className="project-card-eyebrow">PERSONAL PROJECT</span>
+                <h3>Personal Developer Portfolio</h3>
+              </div>
+              <span className="project-card-mark" aria-hidden="true">✳</span>
+            </div>
+            <p className="project-card-description">
+              Designed and deployed a responsive developer portfolio to showcase technical skills, experience, projects, and resume.
+            </p>
+            <ul className="project-feature-list" aria-label="Portfolio features">
+              <li>Responsive design</li>
+              <li>Light and dark themes</li>
+              <li>Subtle UI animations</li>
+              <li>Resume download</li>
+              <li>Server-validated contact form</li>
+              <li>Production deployment</li>
+            </ul>
+            <div className="project-card-footer">
+              <ul className="project-tech-list" aria-label="Technologies used">
+                {[
+                  "Next.js",
+                  "React",
+                  "TypeScript",
+                  "Tailwind CSS",
+                  "Vercel",
+                ].map((technology) => <li key={technology}>{technology}</li>)}
+              </ul>
+              <nav className="project-links" aria-label="Project links">
+                <a href="https://neeraj-portfolio-lac.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/NeerajSalve2002/neeraj-portfolio" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+              </nav>
+            </div>
+          </article>
         </section>
 
         <section id="experience" className="content-section section-wrap section-tinted experience-section">
